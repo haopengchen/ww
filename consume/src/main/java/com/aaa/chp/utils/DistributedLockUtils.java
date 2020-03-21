@@ -23,12 +23,11 @@ public class DistributedLockUtils {
 
     private final Logger log = LoggerFactory.getLogger(DistributedLockUtils.class);
 
-    @Autowired
     private JedisPoolUtil jedisPoolUtil;
 
-//    private DistributedLockUtils(JedisPoolUtil jedisPoolUtil) {
-//        this.jedisPoolUtil = jedisPoolUtil;
-//    }
+    private DistributedLockUtils(JedisPoolUtil jedisPoolUtil) {
+        this.jedisPoolUtil = jedisPoolUtil;
+    }
 
     @Autowired
     private Gson gson;

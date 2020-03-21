@@ -8,12 +8,9 @@ import java.io.Serializable;
  */
 public class CommonDTO<T> implements Serializable {
 
-
     private String ret_Code;
 
-
     private String ret_Msg;
-
 
     private T data;
 
