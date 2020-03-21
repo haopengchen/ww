@@ -1,0 +1,14 @@
+
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://workjob686.cn:3306/bookkeeping?useSSL=false
+    username: root
+    password: 123456
+mybatis:
+#mybatis的xml文件里面不用写 resultType=com.aaa.chp.entity.XXX 直接写resultType=XXX就行了
+#  type-aliases-package: com.aaa.chp.entity
+  mapper-locations: classpath:dao/*.xml

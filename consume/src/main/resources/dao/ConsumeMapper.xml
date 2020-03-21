@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aaa.chp.dao.ConsumeMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.aaa.chp.entity.ConsumeWater" id="ConsumeWaterMap">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="explain" property="explain" jdbcType="VARCHAR" />
+    </resultMap>
+
+
+    <select id="consumeListByUserId" resultType="com.aaa.chp.entity.ConsumeWater">
+        select * from  consume_water
+    </select>
+
+    <!--统计每天的金额-->
+    <select id="countMoneyByDay" resultType="java.lang.Double">
+        SELECT sum(money) from consume_water where userid=#{userId} and createDate BETWEEN #{startTime} and #{endTime}
+    </select>
+
+
+
+
+</mapper>
