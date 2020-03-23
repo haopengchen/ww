@@ -36,7 +36,7 @@
         //详见：https://www.layui.com/doc/modules/table.html#totalRow
         table.render({
             elem: '#test'
-            ,url:'/test/table/demo1.json'
+            ,url:'/layui/demo1.json'
             ,toolbar: '#toolbarDemo'
             ,title: '用户数据表'
             ,totalRow: true
@@ -54,6 +54,8 @@
                 ,{field:'city', title:'城市', width:100}
                 ,{field:'ip', title:'IP', width:120}
                 ,{field:'joinTime', title:'加入时间', width:120}
+                ,{field:'classify', title:'职业', width:120}
+                ,{field:'wealth', title:'资产', width:120}
                 ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
             ]]
             ,page: true

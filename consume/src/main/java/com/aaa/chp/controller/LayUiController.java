@@ -21,7 +21,7 @@ public class LayUiController {
         return "index1111.html";
     }
 
-    //http://localhost:8088/layUi1
+    //http://localhost:8088/layUi2
     @GetMapping("layUi2")
     public String index2() {
         return "index2.html";
