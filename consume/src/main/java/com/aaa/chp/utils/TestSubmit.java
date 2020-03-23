@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by zts on 2020/3/18.
  */
-public class TestSumit {
+public class TestSubmit {
 
     public static void main(String[] args) {
 
